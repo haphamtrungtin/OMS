@@ -1,0 +1,153 @@
+<app-header>
+    <a (click)="triggerSubmenu()">{{titles}}</a>
+</app-header>
+
+<div class="pr-4 lg:ml-20" [ngClass]="{'lg:ml-80': isSubmenuOn }">
+  <div class="flex justify-between w-full header" >
+    <div class="text-sm text-gray-500">
+      <button class="p-3 mr-4 border-2 border-gray-400 rounded-md">Day</button>
+      <button class="p-3 mr-4 border-2 rounded-md border-primary text-primary">
+        Month
+      </button>
+      <button class="p-3 mr-4 border-2 border-gray-400 rounded-md">Year</button>
+      <button type="date" class="p-3 mr-4 border-2 border-gray-400 rounded-sm">
+        Select Custom Date
+      </button>
+    </div>
+    <div class="text-sm text-gray-500">
+      <button class="p-3 mr-4 border-2 border-gray-400 rounded-md">
+        Base Currency - USD
+      </button>
+      <button class="p-3 mr-4 border-2 border-gray-400 rounded-md">
+        Month
+      </button>
+    </div>
+  </div> 
+  <!-- <div class="grid grid-cols-3 gap-4 my-4">
+    <div class="card">
+      <div class="card-header">
+        <h3>Total sales</h3>
+        <p>USD ...</p>
+      </div>
+      <span class="mt-8 text-sm">SALES OVER TIME</span>
+      <p-chart type="line" [data]="salesData" class="my-4"></p-chart>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3>Total return</h3>
+        <p>USD ...</p>
+      </div>
+      <span class="mt-8 text-sm">RETURN OVERTIME</span>
+
+      <p-chart
+        type="doughnut"
+        [data]="returnData"
+        [style]="{ height: '40%' }"
+        [options]="options"
+        class="my-4"
+      ></p-chart>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="inline-block">
+          Product catalog<span class="text-xs text-secondary text-bold">
+            - Pineapple Thanh Hoa</span
+          >
+        </h3>
+      </div>
+      <span class="mt-8 text-sm">PRODUCT SALES OVERTIME</span>
+
+      <p-chart type="bar" [data]="catalogData" class="my-4"></p-chart>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3>Sales by location</h3>
+        <p>USD ...</p>
+      </div>
+      <span class="mt-8 text-sm">VIEW SALE BY BILLING LOCATIONS</span>
+
+      <p-chart type="bar" [data]="saleByLocationData" class="my-4"></p-chart>
+      <ul class="sale-list">
+        <li>
+          <p>Vietnam</p>
+          <span>123123123 </span>
+        </li>
+        <li>
+          <p>Singapore</p>
+          <span>123123123</span>
+        </li>
+        <li>
+          <p>Thailand</p>
+          <span>123123123</span>
+        </li>
+        <li>
+          <p>Malaysia</p>
+          <span>123123123</span>
+        </li>
+        <li>
+          <p>Switzerland</p>
+          <span>123123123</span>
+        </li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3>Total Orders</h3>
+        <p>USD ...</p>
+      </div>
+      <span class="mt-8 text-sm">ORDERS OVER TIME</span>
+
+      <p-chart type="bar" [data]="saleByLocationData" class="my-4"></p-chart>
+      <h3>Top Selling Products</h3>
+      <span class="text-xs !font-normal">TOP PERFORMING PRODUCTS</span>
+      <ul class="sale-list">
+        <li>
+          <p>Pineapple Thanh Hoa 1kg</p>
+          <span>123123123 </span>
+        </li>
+        <li>
+          <p>Apple Australia 2kg</p>
+          <span>123123123</span>
+        </li>
+        <li>
+          <p>Strawberry Dalat 4kg</p>
+          <span>123123123</span>
+        </li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3>Total Sale by Channel</h3>
+      </div>
+      <span class="mt-8 text-sm">SALES SHARE BY STORES</span>
+      <div class="relative my-4 h-60">
+        <div
+          class="absolute border-2 border-white top-0 bottom-0 left-0 w-[60%] h-full bg-primary"
+        ></div>
+        <div
+          class="absolute border-2 border-white bottom-0 right-0 w-[40%] h-[70%] bg-primary bg-opacity-50"
+        ></div>
+        <div
+          class="absolute border-2 border-white top-0 bottom-0 right-0 w-[40%] h-[30%] bg-primary bg-opacity-80"
+        ></div>
+      </div>
+      <ul class="sale-list">
+        <li>
+          <p>Shopee SG</p>
+          <span>123123123 </span>
+          <span>65 </span>
+        </li>
+        <li>
+          <p>Lazada VN</p>
+          <span>123123123</span>
+          <span>20</span>
+        </li>
+        <li>
+          <p>Lazada SG</p>
+          <span>123123</span>
+          <span>15</span>
+        </li>
+      </ul>
+    </div>
+  </div> --> 
+  </div>

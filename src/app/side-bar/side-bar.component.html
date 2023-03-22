@@ -1,0 +1,13 @@
+<nav class="fixed bottom-0 left-0 right-0 z-50 shadow-lg md:py-2 md:h-full md:absolute md:top-0 md:max-w-sidebarWidth bg-primary md:shadow-none ">
+    <div class="flex flex-col items-center md:pt-1">
+        <a routerLink="/"><img src="./assets/logo1.png" alt="" class="hidden px-1 mb-4 md:block " ></a>
+        <ul class="flex items-center justify-center w-full gap-6 md:flex-col"> 
+            <li *ngFor="let element of elements" class="flex w-full duration-100 ease-linear border-b-0 border-l-0 opacity-50 cursor-pointer hover:opacity-100 hover:sm:border-b-4 hover:md:border-b-0 hover:md:border-l-4 hover:border-secondary" routerLink={{element.path}} routerLinkActive="active">
+                <a class="w-full py-2 md:py-4">
+                    <img src={{element.imgSrc}} alt="" class="w-6 mx-auto" >
+                </a>
+            </li>
+        </ul>
+    </div>
+    <app-submenu></app-submenu>
+</nav>

@@ -1,0 +1,16 @@
+.card {
+  @apply flex flex-col p-2 text-sm border-2 border-gray-400 rounded-lg;
+}
+.card h3,
+.card p,
+.card span {
+  font-weight: bold;
+}
+
+/* .card-header span{
+    padding-top: 16px;
+} */
+
+.sale-list li {
+  @apply flex justify-between my-4 text-xs;
+}
