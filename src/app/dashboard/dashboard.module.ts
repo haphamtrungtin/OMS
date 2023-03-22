@@ -8,6 +8,7 @@ import { SalesByLocationComponent } from './salesbylocation/sales-by-location.co
 import { FormsModule } from '@angular/forms';
 import { ChartModule } from 'primeng/chart';
 import { NgApexchartsModule } from "ng-apexcharts";
+import { DashboardStatisticComponent } from './dashboard-statistic/dashboard-statistic.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { NgApexchartsModule } from "ng-apexcharts";
     TotalSalesComponent,
     DashboardComponent,
     HeaderComponent,
-    SalesByLocationComponent
+    SalesByLocationComponent,
+    DashboardStatisticComponent
   ],
   imports: [
     CommonModule,
