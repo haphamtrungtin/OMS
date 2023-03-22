@@ -11,42 +11,39 @@ export class SubmenuComponent {
   elements = [
     {
       name: 'totalSales',
-      imgSrc: './assets/dollar.png',
       content:"Total Sales",
       path: '/dashboard/totalsales',
+      icon :"pi pi-dollar"
     },
     {
       name: 'totalOrder',
-      imgSrc: './assets/cart.png',
       content:"Total Orders",
       path: '/dashboard/totalorder',
+      icon: "pi pi-shopping-cart"
     },
     {
       name: 'cardStatic',
-      imgSrc: './assets/creditCard.png',
       path: '/dashboard/cardstatic',
       content:"Card Statistics Payment",
-
+      icon: "pi pi-credit-card"
     },
     {
       name: 'saleByLocation',
-      imgSrc: './assets/location.png',
       path: '/dashboard/salebylocation',
       content:"Sales by Location",
-
+      icon: "pi pi-globe"
     },
     {
       name: 'saleByPromotion',
-      imgSrc: './assets/purchase.png',
       path: '/dashboard/salebypromotion',
       content:"Sale by Promotions",
-
+      icon:"pi pi-tag"
     },
     {
       name: 'saleByChannel',
-      imgSrc: './assets/store.png',
       path: '/dashboard/salebychannel',
       content:"Total sales by Channel",
+      icon:"pi pi-home"
     },
   ];
   isSubmenuOn: boolean | undefined;

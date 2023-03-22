@@ -1,3 +1,7 @@
 .active{
-    @apply border-l-4 opacity-100 border-primary ;
+    @apply  opacity-100 sm:border-b-4 border-primary md:border-b-0 ;
+    
+}
+.active div{
+    @apply visible block opacity-100 pointer-events-auto;
 }

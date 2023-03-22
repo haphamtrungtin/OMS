@@ -10,49 +10,46 @@ export class SideBarComponent {
   elements = [
     {
       name: 'dashboard',
-      imgSrc: './assets/dashboard_icon.png',
       path: '/dashboard',
+      icon: "pi pi-th-large"
     },
     {
       name: 'order',
-      imgSrc: './assets/archive_icon.png',
       path: '/order',
-
+      icon: "pi pi-box"
     },
     {
       name: 'catalogue',
-      imgSrc: './assets/book_icon.png',
       path: '/catalogue',
-
+      icon : "pi pi-book"
     },
     {
       name: 'inventory',
-      imgSrc: './assets/package_icon.png',
       path: '/inventory',
-
+      icon: "pi pi-inbox"
     },
     {
       name: 'user',
-      imgSrc: './assets/user_icon.png',
       path: '/user',
-
+      icon: "pi pi-user"
     },
     {
       name: 'customer',
-      imgSrc: './assets/userAccount_icon.png',
       path: '/customer',
+      icon: "pi pi-users"
 
     },
     {
       name: 'contact',
-      imgSrc: './assets/phone_icon.png',
       path: '/contact',
+      icon: "pi pi-phone"
 
     },
     {
       name: 'payment',
-      imgSrc: './assets/creditCard_icon.png',
       path: '/payment',
+      icon: "pi pi-creadit-card"
+
     },
   ];
   isSubmenuOn: boolean | undefined;

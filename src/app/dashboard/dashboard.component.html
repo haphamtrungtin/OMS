@@ -2,27 +2,27 @@
     <a (click)="triggerSubmenu()">{{titles}}</a>
 </app-header>
 
-<div class="pr-4 lg:ml-20" [ngClass]="{'lg:ml-80': isSubmenuOn }">
-  <div class="flex justify-between w-full header" >
-    <div class="text-sm text-gray-500">
-      <button class="p-3 mr-4 border-2 border-gray-400 rounded-md">Day</button>
-      <button class="p-3 mr-4 border-2 rounded-md border-primary text-primary">
-        Month
-      </button>
-      <button class="p-3 mr-4 border-2 border-gray-400 rounded-md">Year</button>
-      <button type="date" class="p-3 mr-4 border-2 border-gray-400 rounded-sm">
-        Select Custom Date
-      </button>
-    </div>
-    <div class="text-sm text-gray-500">
-      <button class="p-3 mr-4 border-2 border-gray-400 rounded-md">
-        Base Currency - USD
-      </button>
-      <button class="p-3 mr-4 border-2 border-gray-400 rounded-md">
-        Month
-      </button>
-    </div>
-  </div> 
+<div class="pr-4 md:ml-16" [ngClass]="{'lg:ml-80': isSubmenuOn }">
+  <!-- <div class="flex justify-between w-full header" >
+      <div class="text-sm text-gray-500">
+        <button class="p-3 mr-4 border-2 border-gray-400 rounded-md">Day</button>
+        <button class="p-3 mr-4 border-2 rounded-md border-primary text-primary">
+          Month
+        </button>
+        <button class="p-3 mr-4 border-2 border-gray-400 rounded-md">Year</button>
+        <button type="date" class="p-3 mr-4 border-2 border-gray-400 rounded-sm">
+          Select Custom Date
+        </button>
+      </div>
+      <div class="text-sm text-gray-500">
+        <button class="p-3 mr-4 border-2 border-gray-400 rounded-md">
+          Base Currency - USD
+        </button>
+        <button class="p-3 mr-4 border-2 border-gray-400 rounded-md">
+          Month
+        </button>
+      </div>
+  </div>  -->
   <!-- <div class="grid grid-cols-3 gap-4 my-4">
     <div class="card">
       <div class="card-header">

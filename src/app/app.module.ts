@@ -17,8 +17,6 @@ import { SubmenuComponent } from './submenu/submenu.component';
   declarations: [
     AppComponent,
     SideBarComponent,
-    HeaderComponent,
-    DashboardComponent,
     LayoutComponent,
     OrderComponent,
     CatalogueComponent,

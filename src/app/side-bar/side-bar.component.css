@@ -1,6 +1,11 @@
 .active{
-    @apply opacity-100 sm:border-b-4 md:border-l-4 border-secondary md:border-b-0 ;
+    @apply  opacity-100 sm:border-b-4 border-secondary md:border-b-0 ;
+    
 }
+.active div{
+    @apply visible block opacity-100 pointer-events-auto;
+}
+
 :host{
     width: 100%;
     display: block;
