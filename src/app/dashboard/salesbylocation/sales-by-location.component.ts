@@ -51,6 +51,11 @@ export class SalesByLocationComponent {
   }
   ngOnInit() {
     this.chartOptions = {
+      plotOptions: {
+        heatmap: {
+          radius: 10
+        }
+      },
       series: [
         {
           name: "Vietnam",
@@ -108,7 +113,7 @@ export class SalesByLocationComponent {
       ]
     };
   //must return data by order (from largest)
-  this.countryData = {
+    this.countryData = {
     responsive:false,
     maintainAspectRatio: false,
     datasets: [
@@ -122,37 +127,37 @@ export class SalesByLocationComponent {
             ]
         },
       ],
-  };
-  this.countryOptions= {
-    plugins:{
-      legend:{
-        display:false,
-      }
-  },
-
-  };
-  this.leadOptions= {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins:{
-      legend:{
-        display:false,
-      }
-    }
-  };
-  this.leadData = {
-    labels: ['Singapore', 'Thailand', 'Vietnam', 'Malaysia'],
-    datasets: [
-        {
-            backgroundColor: '#27447C',
-            data: [65, 59, 80, 81]
-        },
-        {
-            backgroundColor: '#FCA310',
-            data: [28, 48, 40, 19]
+    };
+    this.countryOptions= {
+      plugins:{
+        legend:{
+          display:false,
         }
-    ]
-};
+    },
+
+    };
+    this.leadOptions= {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins:{
+        legend:{
+          display:false,
+        }
+      }
+    };
+    this.leadData = {
+      labels: ['Singapore', 'Thailand', 'Vietnam', 'Malaysia'],
+      datasets: [
+          {
+              backgroundColor: '#27447C',
+              data: [65, 59, 80, 81]
+          },
+          {
+              backgroundColor: '#FCA310',
+              data: [28, 48, 40, 19]
+          }
+      ]
+    };
   }
   
   triggerSubmenu(){
