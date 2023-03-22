@@ -1,7 +1,100 @@
 <app-header>
     <a (click)="triggerSubmenu()">{{titles}}</a>
 </app-header>
-<div class="pt-4 pr-4 bg-gray-200 md:pl-16" [ngClass]="{'lg:pl-80': isSubmenuOn }">
-    
-123
+<div class="h-full pb-10 pr-4 bg-gray-50 md:pl-16" [ngClass]="{'lg:pl-80': isSubmenuOn }">
+    <div class="flex justify-between w-full py-4">
+        <h1 class="text-3xl font-bold ">Sale by location</h1>
+       <div class="px-4 py-2 bg-white rounded-xl ">
+           <i class="mr-2 pi pi-calendar"></i>
+           <select class="focus:bg-none active:bg-none focus:outline-none">       
+               <option value="weekly">Weekly</option>
+               <option value="monthly">Monthly</option>
+               <option value="yearly">Yearly</option>
+            </select>
+        </div>
+    </div>
+    <div class="grid grid-rows-3 gap-6 text-xs">
+        <div class="grid grid-cols-4 gap-6">
+            <div class="col-span-2 px-4 py-2 bg-white rounded-lg">
+                <div class="mb-2">
+                    <div class="flex justify-between">
+                        <p class="font-bold ">Sales</p>
+                        <div class="flex items-center px-2 py-1 bg-gray-50 rounded-xl">
+                            <i class="mr-1 pi pi-globe"></i>
+                            <select class="focus:bg-none active:bg-none focus:outline-none bg-gray-50">       
+                                <option value="vietnam">Vietnam</option>
+                                <option value="singapore">Singapore</option>
+                                <option value="malaysia">Malaysia</option>
+                             </select>
+                         </div>
+                    </div>
+                </div>
+                <div class="flex gap-4 ">
+                    <div class="flex items-center justify-between w-full p-2 rounded-md bg-primary bg-opacity-10">
+                        <div class="flex items-center">
+                            <i class="mr-2 pi pi-dollar text-primary"></i>
+                            <span class="my-auto font-bold">23k</span>
+                        </div>
+                        <div class="p-1 text-white rounded-full bg-primary">Dec</div>
+                    </div>
+                    <div class="flex items-center justify-between w-full p-2 text-xs rounded-md bg-success bg-opacity-10">
+                        <div class="flex items-center">
+                            <i class="mr-2 pi pi-arrow-up text-success"></i>
+                            <span class="my-auto font-bold">23k</span>
+                        </div>
+                        <div class="p-1 text-white rounded-full bg-success">vs Nov</div>
+                    </div>
+                </div>
+                <div class="">
+                    <p-chart type="line" [data]="salesData" ></p-chart>
+                </div>
+            </div>
+            <div class="px-4 py-2 bg-white rounded-lg">
+                    <div class="mb-2">
+                        <p class="font-bold ">Country</p>
+                    </div>
+                    <p-chart type="doughnut" [data]="countryData" [options]="countryOptions" class="block w-3/4 mx-auto mb-2"></p-chart>
+                    <div class="flex flex-col gap-4 text-xs font-bold">
+                        <div class="flex justify-between">
+                            <span class="text-primary ">Malaysia</span>
+                            <span><i class="mr-2 text-red-500 pi pi-arrow-down"></i> 50%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-secondary ">Singapore</span>
+                            <span><i class="mr-2 pi pi-arrow-up text-success"></i> 25%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-third ">Vietnam</span>
+                            <span><i class="mr-2 pi pi-arrow-up text-success"></i> 40%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-grayData ">Thailand</span>
+                            <span><i class="mr-2 text-red-500 pi pi-arrow-down"></i> 35%</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="px-4 py-2 bg-white rounded-lg" >
+                
+                    <div class="flex flex-col h-full">
+                        <p class="font-bold ">Leads</p>
+                    <p-chart type="bar" [data]="leadData" [options]="leadOptions" class="object-cover w-full h-full " id="barchart" ></p-chart>
+                    </div>
+            </div>
+        </div>
+        <div class="px-4 py-2 bg-white rounded-lg">
+            <div class="mb-2">
+                <p class="font-bold ">Sales Analytics</p>
+                <div id="chart">
+                    <apx-chart
+                      [series]="chartOptions.series"
+                      [chart]="chartOptions.chart"
+                      [dataLabels]="chartOptions.dataLabels"
+                      [title]="chartOptions.title"
+                      [colors]="chartOptions.colors"
+                    ></apx-chart>
+                  </div>
+            </div>
+        </div>
+        <div class="px-4 py-2 bg-white rounded-lg"></div>
+    </div>
 </div>

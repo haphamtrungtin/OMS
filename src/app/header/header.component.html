@@ -1,11 +1,11 @@
-<div class="flex items-center justify-between p-2 border-b-2 border-gray-300 shadow-sm md:shadow-none border-opacity-70 lg:py-3 md:pb-4 md:pr-4">
-    <div class="flex items-center font-medium transition-all duration-200 ease-linear [&_a]:ml-1 [&_a]:hover:text-primary [&_a]:cursor-pointer md:ml-16 " [ngClass]="{'md:ml-80 lg:ml-80': isSubmenuOn}">
+<div class="flex items-center justify-between p-2 pl-0 border-b-2 border-gray-300 shadow-sm md:shadow-none border-opacity-70 lg:py-3 md:pb-4 md:pr-4">
+    <div class="flex items-center font-medium transition-all duration-200 ease-linear [&_a]:ml-1 [&_a]:hover:text-primary [&_a]:cursor-pointer md:pl-16 " [ngClass]="{'md:pl-80 lg:pl-80': isSubmenuOn}">
         <a routerLink="/">Home > </a> 
         <ng-content ></ng-content>
     </div>
     <div class="flex items-center gap-4 ml-auto md:justify-between user">
-        <img src="./assets/bell_icon.png" alt="" class="w-4 md:w-6">
-        <img src="./assets/message_icon.png" alt="" class="w-4 md:w-6">
+        <i class="pi pi-bell"></i>
+        <i class="pi pi-comments "></i>
         <a href="/" class="w-8 h-8">
             <img src="./assets/avt.jpg" alt="Avatar" class="object-cover w-full h-full rounded-full" >
         </a>

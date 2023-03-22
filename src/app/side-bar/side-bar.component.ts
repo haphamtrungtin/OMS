@@ -44,13 +44,7 @@ export class SideBarComponent {
       path: '/contact',
       icon: "pi pi-phone"
 
-    },
-    {
-      name: 'payment',
-      path: '/payment',
-      icon: "pi pi-creadit-card"
-
-    },
+    }
   ];
   isSubmenuOn: boolean | undefined;
   constructor(private data : ShareService) {
