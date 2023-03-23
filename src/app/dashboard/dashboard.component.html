@@ -1,8 +1,21 @@
 <app-header>
-    <a (click)="triggerSubmenu()">{{titles}}</a>
+  <a (click)="triggerSubmenu()">{{titles}}</a>
 </app-header>
 
-<div class="pr-4 md:ml-16" [ngClass]="{'lg:ml-80': isSubmenuOn }">
+<div class="p-6 lg:p-4 md:ml-16 bg-gray-100" [ngClass]="{'lg:ml-80': isSubmenuOn }">
+  <div class="grid grid-rows-2">
+    <div class="grid-cols-12">
+      <div class="grid grid-rows lg:grid-cols-3 gap-3 mt-4">
+        <app-totalsalechart></app-totalsalechart>
+        <app-totalreturn></app-totalreturn>
+        <app-productcatalogchart></app-productcatalogchart>
+      </div>
+      
+    </div>
+
+    <div>01</div>
+  </div>
+
   <!-- <div class="flex justify-between w-full header" >
       <div class="text-sm text-gray-500">
         <button class="p-3 mr-4 border-2 border-gray-400 rounded-md">Day</button>
@@ -149,5 +162,5 @@
         </li>
       </ul>
     </div>
-  </div> --> 
-  </div>
+  </div> -->
+</div>

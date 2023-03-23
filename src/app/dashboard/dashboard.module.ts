@@ -8,6 +8,14 @@ import { SalesByLocationComponent } from './salesbylocation/sales-by-location/sa
 import { FormsModule } from '@angular/forms';
 import { ChartModule } from 'primeng/chart';
 import { NgApexchartsModule } from "ng-apexcharts";
+import { LinechartComponent } from './linechart/linechart.component';
+import { TotalsalechartComponent } from './totalsalechart/totalsalechart.component';
+import { TopsellingproductComponent } from './topsellingproduct/topsellingproduct.component';
+import { SalestoreComponent } from './salestore/salestore.component';
+import { BarchartComponent } from './barchart/barchart.component';
+import { ProductcatalogchartComponent } from './productcatalogchart/productcatalogchart.component';
+import { DoughnutchartComponent } from './doughnutchart/doughnutchart.component';
+import { TotalreturnComponent } from './totalreturn/totalreturn.component';
 
 
 @NgModule({
@@ -15,7 +23,15 @@ import { NgApexchartsModule } from "ng-apexcharts";
     TotalSalesComponent,
     DashboardComponent,
     HeaderComponent,
-    SalesByLocationComponent
+    SalesByLocationComponent,
+    LinechartComponent,
+    TotalsalechartComponent,
+    TopsellingproductComponent,
+    SalestoreComponent,
+    BarchartComponent,
+    ProductcatalogchartComponent,
+    DoughnutchartComponent,
+    TotalreturnComponent,
   ],
   imports: [
     CommonModule,
