@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CatalogueComponent } from './catalogue/catalogue.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { TotalSalesComponent } from './dashboard/totalsales/total-sales/total-sales.component';
 import { LayoutComponent } from './layout/layout.component';
 import { OrderComponent } from './order/order.component';
 
