@@ -2,7 +2,6 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { SalesByLocationComponent } from './salesbylocation/sales-by-location.component';
-import { TotalSalesComponent } from './totalsales/total-sales/total-sales.component';
 
 const routes: Routes = [
   {
@@ -11,12 +10,12 @@ const routes: Routes = [
     data:{title: "Dashboard"}
   }
   ,
-  {
-    path:"totalsales",
-    component:TotalSalesComponent,
-    data:{title: "Total Sales"}
-  }
-  ,
+  // {
+  //   path:"totalsales",
+  //   component:TotalSalesComponent,
+  //   data:{title: "Total Sales"}
+  // }
+  // ,
   {
     path:"salebylocation",
     component:SalesByLocationComponent,
